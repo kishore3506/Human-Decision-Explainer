@@ -41,16 +41,16 @@ Expected files include the Choices13K CSV and associated problem metadata. The p
 
 ## Environment setup
 
-Use Python 3.13 with the project requirements installed:
+Use Python 3.11 with the project requirements installed:
 
 ```powershell
 cd "c:\Users\kish3\Desktop\AML project\human-decision-rl"
-python -m venv venv
+py -3.11 -m venv venv
 venv\Scripts\activate
 python -m pip install -r requirements.txt
 ```
 
-Note: the installed Transformers version in this environment requires the compatibility package `tf-keras` for import compatibility. The project requirement file includes it.
+The standard requirements are for CPU-compatible inference and deployment. For optional 4-bit/8-bit CUDA quantization, install `requirements-gpu.txt` after the standard requirements in a supported GPU environment.
 
 ## Quick start
 
